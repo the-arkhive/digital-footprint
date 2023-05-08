@@ -19,26 +19,26 @@ A framework for a personal digital footprint that gives full control to the owne
 	- [As Free As Possible](#as-free-as-possible])
 - [Software](#software)
 	- [Telegram](#telegram)
+		- [Overview](#overview)
+		- [Install](#install)
+	- [KeePassXC](#keepassxc)
 		- [Overview](#overview-1)
 		- [Install](#install-1)
-	- [[#KeePassXC]]
-		- [[LifeOS#KeepassXC#Overview|Overview]]
-		- [[LifeOS#KeePassXC#Install|Install]]
-	[[#PiHole]]
-		[[LifeOS#PiHole#Overview|Overview]]
-		[[LifeOS#PiHole#Install|Install]]
-	[[#VPN]]
-		[[LifeOS#VPN#Overview|Overview]]
-		[[LifeOS#VPN#Install|Install]]
-	[[#Syncthing]]
-		[[LifeOS#Syncthing#Overview|Overview]]
-		[[LifeOS#Syncthing#Install|Install]]
-	[[#Tailscale]]
-		[[LifeOS#Tailscale#Overview|Overview]]
-		[[LifeOS#Tailscale#Install|Install]]
-	[[#Obsidian]]
-		[[LifeOS#Obsidian#Overview|Overview]]
-		[[LifeOS#Ovsidian#Install|Install]]
+	[PiHole](#pihole)
+		- [Overview](#overview-2)
+		- [Install](#install-2)
+	[VPN](#vpn)
+		- [Overview](#overview-3)
+		- [Install](#install-3)
+	[Syncthing](#syncthing)
+		- [Overview](#overview-4)
+		- [Install](#install-4)
+	[Tailscale](#tailscale)
+		- [Overview](#overview-5)
+		- [Install](#install-5)
+	[Obsidian](#obsidian)
+		- [Overview](#overview-6)
+		- [Install](#install-6)
 [[#Hardware Overview]]
 	[[#Networking Devices]]
 		[[LifeOS#Networking Devices#Overview|Overview]]
