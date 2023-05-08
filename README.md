@@ -19,8 +19,8 @@ A framework for a personal digital footprint that gives full control to the owne
 	- [As Free As Possible](#as-free-as-possible])
 - [Software](#software)
 	- [Telegram](#telegram)
-		- [Overview](#telegram#overview)
-		- [[LifeOS#Telegram#Install|Install]]
+		- [Overview](#overview-1)
+		- [Install](#install-1)
 	- [[#KeePassXC]]
 		- [[LifeOS#KeepassXC#Overview|Overview]]
 		- [[LifeOS#KeePassXC#Install|Install]]
