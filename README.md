@@ -1,3 +1,5 @@
+NOTE: Currently this is copied directly from a file in Obsidian. A bunch of formatting and internal linking is currently broken, but I wanted a way to get this text live to start sharing it. There are still sections being worked on, filler text in some spots, and general improvments to be made. I am by no means an expoert on these topics, but I have spent a lot of time digesting the information from others and feel I have an okay sense coupled with an ability to put things in very understandable terms.
+
 # LifeOS (Working Title)
 #tech #decentralize #software #hardware 
 ### Doomsday Prepping for the Internet Apocalypse
@@ -5,23 +7,23 @@ A framework for a personal digital footprint that gives full control to the owne
 
 
 ## Table of Contents
-[[#Introduction]]
-	[[#Overview]]
-	[[#Reason and "Qualifications"]]
-	[[#Goals]]
-[[#Core Concepts]]
-	[[#Private]]
-	[[#Self Hosted]]
-	[[#"Offline"]]
-	[[#Scalable]]
-	[[#As Free as Possible]]
-[[#Software]]
-	[[#Telegram]]
-		[[LifeOS#Telegram#Overview|Overview]]
-		[[LifeOS#Telegram#Install|Install]]
-	[[#KeePassXC]]
-		[[LifeOS#KeepassXC#Overview|Overview]]
-		[[LifeOS#KeePassXC#Install|Install]]
+- [Introduction](#introduction)
+	- [Overview](#overview)
+	- [Reason and "Qualifications"](#reason-and-"rualifications")
+	- [Goals](#goals)
+- [Core Concepts](#core-concepts)
+	- [Private](#private)
+	- [Self Hosted](#self-hosted)
+	- [Offline](#"offline")
+	- [Scalable](#scalable)
+	- [As Free As Possible](#as-free-as-possible])
+- [Software](#software)
+	- [Telegram](#telegram)
+		- [Overview](#telegram#overview)
+		- [[LifeOS#Telegram#Install|Install]]
+	- [[#KeePassXC]]
+		- [[LifeOS#KeepassXC#Overview|Overview]]
+		- [[LifeOS#KeePassXC#Install|Install]]
 	[[#PiHole]]
 		[[LifeOS#PiHole#Overview|Overview]]
 		[[LifeOS#PiHole#Install|Install]]
