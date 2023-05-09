@@ -39,26 +39,26 @@ A framework for a personal digital footprint that gives full control to the owne
 	- [Obsidian](#obsidian)
 		- [Overview](#overview-7)
 		- [Install](#install-6)
-[[#Hardware Overview]]
-	[[#Networking Devices]]
-		[[LifeOS#Networking Devices#Overview|Overview]]
-		[[LifeOS#Networking Devices#Setup|Setup]]
-	[[#SBC and Linux]]
-		[[LifeOS#SBC and Linux#Overview|Overview]]
-		[[LifeOS#SBC and Linux#Setup|Setup]]
-	[[#HDD Enclosure]]
-		[[LifeOS#HDD Enclosure#Overview|Overview]]
-		[[LifeOS#HDD Enclosure#Setup|Setup]]
-	[[#Mobile Devices]]
-		[[LifeOS#Mobile Devices#Overview|Overview]]
-		[[LifeOS#Mobile Devices#Setup|Setup]]
-	[[#Desktop Computer]]
-		[[LifeOS#Desktop Computer#Overview|Overview]]
-		[[LifeOS#Desktop Computer#Setup|Setup]]
-	[[#Personal Server]]
-		[[LifeOS#Personal Server#Overview|Overview]]
-		[[LifeOS#Personal Server#Setup|Setup]]
-[[#Beyond]]
+- [[#Hardware Overview]]
+	- [[#Networking Devices]]
+		- [[LifeOS#Networking Devices#Overview|Overview]]
+		- [[LifeOS#Networking Devices#Setup|Setup]]
+	- [[#SBC and Linux]]
+		- [[LifeOS#SBC and Linux#Overview|Overview]]
+		- [[LifeOS#SBC and Linux#Setup|Setup]]
+	- [[#HDD Enclosure]]
+		- [[LifeOS#HDD Enclosure#Overview|Overview]]
+		- [[LifeOS#HDD Enclosure#Setup|Setup]]
+	- [[#Mobile Devices]]
+		- [[LifeOS#Mobile Devices#Overview|Overview]]
+		- [[LifeOS#Mobile Devices#Setup|Setup]]
+	- [[#Desktop Computer]]
+		- [[LifeOS#Desktop Computer#Overview|Overview]]
+		- [[LifeOS#Desktop Computer#Setup|Setup]]
+	- [[#Personal Server]]
+		- [[LifeOS#Personal Server#Overview|Overview]]
+		- [[LifeOS#Personal Server#Setup|Setup]]
+- [[#Beyond]]
 
 
 ***
@@ -113,11 +113,13 @@ There’s a slew of other features, but those few alone have placed the app at t
 Very easy, simply visit the [website](https://telegram.org/), click on your platform of choice and either be directed to the corresponding App Store, or get a download of the installer. Alternatively visit the [web interface](https://web.telegram.org/z/) to setup the app from say a public computer. The app needs only a phone number to setup and then you are good to go.
 
 ##### Recommended Apps
-KJHGFKJBASJKBFDJKBSDKJBN
+- Available on all app stores
+- Desktop app downloadable from website
+- Web app accessible at [web.telegram.org](web.telegram.org)
 
 ##### Alternatives
-[Signal](https://signal.org/en/)
-[WhatsApp](https://www.whatsapp.com/) (Owned by Meta/Facebook)
+- [Signal](https://signal.org/en/)
+- [WhatsApp](https://www.whatsapp.com/) (Owned by Meta/Facebook)
 
 
 ***
