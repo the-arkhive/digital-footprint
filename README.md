@@ -9,7 +9,7 @@ A framework for a personal digital footprint that gives full control to the owne
 ## Table of Contents
 - [Introduction](#introduction)
 	- [Overview](#overview)
-	- [Reason and "Qualifications"](#reason-and-"rualifications")
+	- [Reason and "Qualifications"](#reason-and-"qualifications")
 	- [Goals](#goals)
 - [Core Concepts](#core-concepts)
 	- [Private](#private)
@@ -39,25 +39,25 @@ A framework for a personal digital footprint that gives full control to the owne
 	- [Obsidian](#obsidian)
 		- [Overview](#overview-7)
 		- [Install](#install-6)
-- [[#Hardware Overview]]
-	- [[#Networking Devices]]
-		- [[LifeOS#Networking Devices#Overview|Overview]]
-		- [[LifeOS#Networking Devices#Setup|Setup]]
-	- [[#SBC and Linux]]
-		- [[LifeOS#SBC and Linux#Overview|Overview]]
-		- [[LifeOS#SBC and Linux#Setup|Setup]]
-	- [[#HDD Enclosure]]
-		- [[LifeOS#HDD Enclosure#Overview|Overview]]
-		- [[LifeOS#HDD Enclosure#Setup|Setup]]
-	- [[#Mobile Devices]]
-		- [[LifeOS#Mobile Devices#Overview|Overview]]
-		- [[LifeOS#Mobile Devices#Setup|Setup]]
-	- [[#Desktop Computer]]
-		- [[LifeOS#Desktop Computer#Overview|Overview]]
-		- [[LifeOS#Desktop Computer#Setup|Setup]]
-	- [[#Personal Server]]
-		- [[LifeOS#Personal Server#Overview|Overview]]
-		- [[LifeOS#Personal Server#Setup|Setup]]
+- [Hardware Overview](#hardware-overview)
+	- [Networking Devices](#networking-devices)
+		- [Overview](#overview-8)
+		- [Setup](#setup)
+	- [SBC and Linux](#sbc-and-linux)
+		- [Overview](#overview-9)
+		- [Setup](#setup-1)
+	- [HDD Enclosure](#hdd-enclosure)
+		- [Overview](#overview-10)
+		- [Setup](#setup-2)
+	- [Mobile Devices](#mobile-devices)
+		- [Overview](#overview-11)
+		- [Setup](#setup-3)
+	- [Desktop Computer](#desktop-computer)
+		- [Overview](#overview-12)
+		- [Setup](#setup-4)
+	- [Personal Server](#personal-server)
+		- [Overview](#overview-13)
+		- [Setup](#setup-5)
 - [[#Beyond]]
 
 
