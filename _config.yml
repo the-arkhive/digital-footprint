@@ -8,5 +8,5 @@ plugins:
 
 title: Arkhive
 description: "A “lifestyle” blog for facing down the data apocalypse"
-show_downloads: "false"
-show_header: "false"
+show_downloads: false
+show_header: false
