@@ -58,7 +58,7 @@ A framework for a personal digital footprint that gives full control to the owne
 	- [Personal Server](#personal-server)
 		- [Overview](#overview-13)
 		- [Setup](#setup-5)
-- [[#Beyond]]
+- [Beyond](#beyond)
 
 
 ***
@@ -70,36 +70,47 @@ This project, deemed ‘LifeOS’, aims to provide an introduction to various sy
 ### Reason and "Qualifications"
 Where did this project start? Passwords. However, passwords make up only a small portion of the overall framework. As I began to explore and utilize the World Wide Web I naturally started making accounts with various sites. Fairly early on I made the shift to a password manager. I believe it was 1Password at first. Eventually 1Password moved to a subscription model without any free options, or least not that offered the functionality I wanted. I migrated everything to LastPass, which eventually went a similar way, along with going through a serious data breach. Jumping ship again I found MyKi, which showed great promise as a free, highly featured, cross platform, password manager. Unfortunately MyKi was bought out by some other company and either moved to a subscription model, or was just deleted outright.
 
-This left me with a text file full of passwords, and a strong desire to not keep them in that form for long. I went hunting again for “free open source password manager” and quickly came across KeePassXC, a piece of software meant for Linux systems that checks all the boxes, minus being cross platform to some degree, but that will be covered later. I imported my data and then needed a way to share the KeePass database across my devices. At first I was using standard cloud storage solutions, like GoogleDrive, iCloud, and OneDrive, but this still meant my data was on someone else’s hardware. While the database file is heavily encrypted, should one of those companies have a data breach or other incident, my vault file was right there on their hardware. So began my efforts to find ways to replace companies various services with private, self hosted, and encrypted alternatives.
+This left me with a text file full of passwords and a strong desire to not keep them in that form for long. I went hunting again for “free open source password manager” and quickly came across KeePassXC, a piece of software meant for Linux systems that checks all the boxes, minus being cross platform to a degree. I imported my data and then needed a way to share the database KeePass uses across my devices. At first I was using standard cloud storage solutions, like GoogleDrive, iCloud, and OneDrive, but this still meant my data was in someone’s “cloud”. While the database file is heavily encrypted, should one of those companies have a data breach or other incident, my vault file was right there on their hardware. So began my efforts to find ways to replace companies various services with private, self hosted, and encrypted alternatives.
 
-What makes me particularly suited to present the overall system I have come up with? Honestly not much as far as technological knowledge goes, but I believe I am a fairly good teacher, and am good at converting technical jargon into language the majority of people can follow and understand. I firmly believe these tools more accessible to folks outside of the tech world and I aim to help bridge that gap and allow more people to be in control of their data. The system I will present can be adopted in parts, can be scaled for your uses, and can be shared with exactly the people you want. It most definitely takes a bit more effort to set up and maintain than some of the alternatives, but the resulting system is one I find incredibly robust in the face of more subscription models and data mongering companies.
+What makes me particularly suited to present the overall system I have come up with? Honestly not much as far as technological knowledge goes, but I believe I am a fairly good teacher, and am good at converting technical jargon into language the majority of people can follow and understand. I firmly believe these tools should be more accessible to folks outside of the tech world and I aim to help bridge that gap and allow more people to be in control of their data. The system I will present can be adopted in parts, can be scaled for your uses, and can be shared with exactly the people you want. It most definitely takes a bit more effort to set up and maintain than some of the alternatives, but the resulting system is one I find incredibly robust in the face of more subscription models and data mongering companies.
 
 ### Goals
-The goals of this project will be explored in a bit more detail in the next [[#Core Concepts]] section, but an overall looks will be presented here. At the most base level I wanted something secure. A way to get all the functionality I associate with the services Apple, Google, Microsoft, and others provide, without committing my data to someone else’s hardware, aka cloud, where it can be scraped and sold. That goal ends up having fairly complex implications as I explore the different systems I want to replace, but I have finally landed on a core set of software that tackles what I want.
+The goals of this project will be explored in a bit more detail in the next [Core Concepts](#core-concepts) section, but an overall look will be presented here. At the most base level I wanted something secure. A way to get all the functionality I associate with the services Apple, Google, Microsoft, and others provide, without committing my data to someone else’s hardware, aka cloud, where it can be scraped and sold. That goal ends up having fairly complex implications as I explore the different systems I want to replace, but I have finally landed on a core set of software that tackles what I want. The general services I was looking to replace are:
+- Messaging
+- Password manager
+- Cloud storage
+- Remote access
+- Data storage, visualization, browsing, and sharing
 
 ***
 ## Core Concepts
 
 ### Private
-Mine and mine alone, unless specified by me. This means I want my data to only ever exist on my hardware. That could be my phone or tablet, as well as desktop or laptop computers. Even when transferring data it should never sit on another person’s device unless I have included that device in my network of data sharing. This will make more sense when discussing [[#Syncthing]] later. On top of this, data should be encrypted whenever possible even when only going directly between my devices.
+Mine and mine alone, unless specified by me. This means I want my data to only ever exist on my hardware. That could be my phone or tablet, as well as desktop or laptop computers. Even when transferring data it should never sit on another person’s device unless I have included that device in my network of data sharing. This will make more sense when discussing [[#Syncthing]] later on. Data should be encrypted whenever possible, even when going directly between my devices and minimizing reliance on protocols outside those the web usually uses is welcome.
 
 ### Self Hosted
-To be honest I’m not the most knowledgeable of the wide world of “self hosted” services, and the systems I discuss here might not truly qualify, but for my purposes they are self hosted. Meaning, one of my own devices is the source of the system or service’s core functionality. In some cases that functionality is decentralized across my devices and they are all contributing to the hosting and sharing of my data among themselves. I’m avoiding the phrase “roll your own”, which is often used in conjunction with “self hosted”. Most of the software used just takes running an installer to get working, rather than having to compile and tweak software to your specific needs and system, most of the software works “out of the box”.
+To be honest I’m not the most knowledgeable of the wide world of “self hosted” services and the systems I discuss here might not truly qualify. For my purposes however, they are self hosted. Meaning, one of my own devices is the source of the system or service’s core functionality. In some cases that functionality is decentralized across my devices and they are all contributing to the hosting and sharing of my data among themselves. I’m avoiding the phrase “roll your own”, which is often used in conjunction with “self hosted”. Most of the software used just takes running an installer to get working, rather than having to compile and tweak software to your specific needs and system. Most of the software works “out of the box”. Eventually I will get into hardware options and how those can supplement the system described, which then does begin to get closer to truly “self hosted” but the hardware section is very optional for core functionality.
 
 ### "Offline"
-Very little works truly offline these days, but as many parts of this system as possible maintain functionality when not connected to The Internet, capital T, capital I. They still utilize protocols that would maybe qualify as “online” but can do so without ever exposing their traffic to the World Wide Web should they be configured to do so. This takes three primary forms. The first is just outright offline functionality. The software doesn’t depend on any sort of internet connection to function at it’s most base level. Secondly is LAN functionality. LAN, or Local Area Network, would be what you get if you power up a router but do not supply it with say an ethernet connection from your modem. The router still broadcasts a WiFi network, that network just doesn’t provide access to The Internet. Some of these tools, specified in their own sections, maintain functionality over LAN, meaning they don’t have to ever touch The Internet to function. Finally is encrypted tunneling. This references systems that still utilize The Internet and the connections it provides, but route all your traffic through encrypted pathways, therefor not exposing it, or at least not exposing any usable form of it, to would be bad actors.
+Very little works truly offline these days, but as many parts of this system as possible maintain functionality when not connected to The Internet, capital “T”, capital “I”. They still utilize protocols that would maybe qualify as “online” but can do so without ever exposing their traffic to the World Wide Web should they be configured to do so. This takes three primary forms.
+
+The first is just outright offline functionality. The software doesn’t depend on any sort of internet connection to function at it’s most base level.
+
+Secondly is LAN functionality. LAN, or Local Area Network, would be what you get if you power up a router but do not supply it with say an ethernet connection from your modem. The router still broadcasts a WiFi network, that network just doesn’t provide access to The Internet. Some of these tools, specified in their own sections, maintain functionality over LAN, meaning they don’t have to ever touch The Internet to function.
+
+Finally is encrypted tunneling. This references systems that still utilize The Internet and the connections it provides, but route all your traffic through encrypted pathways, therefor not exposing it, or at least not any usable form of it, to would be bad actors.
 
 ### Scalable
-I wanted the core functionality of this system to be deployable on any scale. From firing it up on your phone to setting up a personal server dedicated to hosting and running this system, this is meant to get as much functionality as accessibly as possible. If you already have a phone, most of this can be used. If you have a spare single board computer, like a RaspberryPi laying around then you can setup even more with that, and so on.
+I wanted the core functionality of this system to be deployable on any scale. From firing it up on your phone to setting up a personal server dedicated to hosting and running the system, this is meant to get as much functionality as accessibly as possible. If you already have a phone, most of this can be used. If you have a spare single board computer, like a RaspberryPi laying around then you can setup even more with that, and so on.
 
 ### As Free as Possible
-A big reason I was motivated to figure all this out was to avoid subscriptions. Notice how I did not say paying in general. Good software is good, and good developers are rare, so I fully support BUYING good software. Not borrowing, not renting, not agreeing to have to buy it again when the next version comes out. Buying single, lifetime, licenses to software is something I fully support, but where possible free is better. I am fairly willing to purchase software when it checks all my boxes, but I know that is not the case for all people. I don’t believe there is a single part of this that REQUIRES paying, and where I prefer a paid product I will do my best to provide free alternatives. The biggest “feature” I worked to avoid was subscription models, as these mean you don’t really own the software at all, you are at the whims of the company that is clearly trying to siphon as much money as they can out of you.
+A big reason I was motivated to figure all this out was to avoid subscriptions. Notice how I did not say paying in general. Good software is good, and good developers are rare, so I fully support BUYING good software. Not borrowing, not renting, not agreeing to have to buy it again when the next version comes out. Buying single, lifetime, licenses to software is something I fully support, but where possible free is better. I am fairly willing to purchase software when it checks all my boxes, but I know that is not the case for all people. I don’t believe there is a single part of the software side this framework that REQUIRES paying, and where I prefer a paid product I do my best to provide free alternatives. The biggest “feature” I worked to avoid was subscription models. These mean you don’t really own the software at all, and are at the whims of the company that is clearly trying to siphon as much money as they can out of you. Long term I will expand this to a whole computer’s worth of software that tries to do away with subscriptions and find replacements, paid and free, for many of the applications that try to keep users locked into payment plans.
 
 
 ***
 ***
 ## Software
-This is where I get into detail on each of the pieces of software I use and consider part of this digital footprint framework. I would say there’s a few more that are part of my particular setup, but these comprise the core and cover most functionality that I got from often paid services from large data hungry corporations.
+This is where I get into detail on each of the pieces of software I use and consider part of this digital footprint framework. I would say there’s a few more that are part of my particular setup, but the ones explored below comprise the core and cover most functionality that I got from paid services.
 
 ### Telegram
 #### Overview
@@ -113,9 +124,17 @@ There’s a slew of other features, but those few alone have placed the app at t
 Very easy, simply visit the [website](https://telegram.org/), click on your platform of choice and either be directed to the corresponding App Store, or get a download of the installer. Alternatively visit the [web interface](https://web.telegram.org/z/) to setup the app from say a public computer. The app needs only a phone number to setup and then you are good to go.
 
 ##### Recommended Apps
-- Available on all app stores
-- Desktop app downloadable from website
-- Web app accessible at [web.telegram.org](web.telegram.org)
+https://telegram.org/
+- iOS (App Store links)
+	- [Telegram](https://apps.apple.com/us/app/telegram-messenger/id686449807) (Free)
+		- [GitHub](https://github.com/TelegramMessenger/Telegram-iOS)
+- Android (Play Store links)
+	- [Telegram](https://play.google.com/store/apps/details?id=org.telegram.messenger&hl=en_US&gl=US) (Free)
+		- [F-Droid mirror](https://f-droid.org/en/packages/org.telegram.messenger/) (To avoid using Google services)
+		- [GitHub](https://github.com/DrKLO/Telegram)
+- Desktop (all platforms)
+	- [Telegram](https://telegram.org/apps) (Free)
+	- [GitHub](https://github.com/telegramdesktop/tdesktop)
 
 ##### Alternatives
 - [Signal](https://signal.org/en/)
@@ -125,19 +144,19 @@ Very easy, simply visit the [website](https://telegram.org/), click on your plat
 ***
 ### KeePassXC
 #### Overview
-The solution to my password woes. KeePassXC is a wonderful piece of software. Totally free, totally open source, highly featured, and with some work, cross platform. There are browser extensions for auto fill, mobile apps and with a bit more work syncing of your encrypted database between any instance of the software. I use this software to generate passwords, save login data, and even store some notes containing sensitive information I want access to anywhere. I have it set to unlock with a master password on my desktop and the mobile app I happen to use makes me use my master password every 2 weeks, otherwise my vault is locked behind biometric authentication and a PIN.
+The solution to my password woes. [KeePassXC](https://keepassxc.org/) is a wonderful piece of software. Totally free, totally open source, highly featured, and with some work, cross platform. There are browser extensions for auto fill, mobile apps and with a bit more work syncing of your encrypted passwords between all devices. I use this software to generate passwords, save login data, and even store some notes containing sensitive information I want access to anywhere. I have it set to unlock with a master password on my desktop and the mobile app I happen to use has my vault locked behind biometric authentication and a PIN with my master password being needed every two weeks. You can even set up a duress PIN that you can enter if you are being forced to unlock your database that triggers a mass deletion.
 
-As far as mobile apps go they all basically just are interfaces for reading the database file. I am an iOS user and have found the app Strongbox to do what I want, but it is a paid app. Strongbox has a subscription option, but also offers a single lifetime purchase. I valued the feature set of Strongbox enough for how often I use it that that purchase made sense. There is a truly free alternative provided below, but from what I can tell it doesn’t offer quite the same features. For Android I have provided what seems to be the standard app, and I will test it myself soon.
+As far as mobile apps go they all are basically interfaces for reading the database file. I am an iOS user and have found the app Strongbox to do what I want, but it is a paid app. Strongbox has a subscription option, but also offers a single lifetime purchase that is a bit hefty. I valued the feature set of Strongbox enough for how often I use it that that purchase made sense and I have most definitely saved money compared to the subscription for how long I’ve been using the app. There is a truly free alternative provided below, but from what I can tell it doesn’t offer quite the same features. For Android I have provided what seems to be the standard app, and I will test it myself soon.
 
 
 #### Install
-For desktop operating systems install is quite easy. Visit the [website](https://keepassxc.org/), download the installer for your platform of choice and run it. On launching the application your will be prompted to either open a database or make a new one. Make a new one and start adding passwords.
+For desktop operating systems install is quite easy. Visit the [website](https://keepassxc.org/), download the installer for your platform of choice and run it. On launching the application you will be prompted to either open a database or make a new one. Make a new one and start adding passwords.
 
 For the iOS apps linked below setup is similar. Simply install, lunch, and make a database. Choose somewhere to save it and begin adding passwords.
 
 Android I assume is similar, but I have not actually tested it yet.
 
-Migration to this app can be a mixed bag. Coming from other password managers should be as simple as finding the export option in your previous manager, selecting export to CSV, and then slecting import from CSV in KeePass, but this is only doable in the desktop app. Make sure to delete the CSV file after import as it has all your passwords in plaintext within it. Migrating from iCloud passwords is worse, as there is no option to export your saved passwords, they must be manually copy pasted. While an absolute pain, I took that process as an opportunity to prune my saved passwords and run a bit of an audit on passwords I used across multiple sites, and removing accounts for websites and services I hadn’t used in years. Migrating from a browser’s password manager, like Chrome or Edge, follows similar steps as other password managers. Export your passwords and import into KeePass. Each users system is going to be slightly different so providing an explicit step by step is a challenge.
+Migration to this app can be a mixed bag. Coming from other password managers should be as simple as finding the export option in your previous manager, selecting export to CSV, and then slecting import from CSV in KeePass, but this import is only doable in the desktop app as far as I can tell. Make sure to delete the CSV file after import as it has all your passwords in plaintext within it. Migrating from iCloud passwords is worse, as there is no option to export your saved passwords, they must be manually copy pasted. While an absolute pain, I took that process as an opportunity to prune my saved passwords and run a bit of an audit on passwords I used across multiple sites, and remove accounts for websites and services I hadn’t used in years. Migrating from a browser’s password manager, like Chrome or Edge, follows similar steps as other password managers. Export your passwords and import into KeePass. Each users system is going to be slightly different so providing an explicit step by step is a challenge.
 
 ##### Recommended Apps
 - iOS (App Store links)
@@ -149,6 +168,9 @@ Migration to this app can be a mixed bag. Coming from other password managers sh
 	- [Keepass2Android](https://play.google.com/store/apps/details?id=keepass2android.keepass2android&hl=en_US&gl=US) (Free)
 		- [F-Droid mirror](https://f-droid.org/en/packages/com.android.keepass/) (To avoid using Google services)
 		- [GitHub](https://github.com/PhilippC/keepass2android)
+- Desktop (all platforms)
+	- [KeePassXC](https://keepassxc.org/download/#code) (Free)
+	- [GitHub](https://github.com/keepassxreboot/keepassxc)
 
 ##### Alternatives
 I have yet to find any piece of software that achieves what KeePassXC does.
