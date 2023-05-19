@@ -316,11 +316,28 @@ We are in the realm of very optional parts of this whole system, but still worth
 
 As I have used Obsidian more and more I have started to think of it as my own personal internet. A collection of pages linked together that is searchable, and navigable via those links and searches. I use this internet to store and track many aspects of my life, ranging from reviews and notes of books I have read to lists of products I intend to buy when I can get around to it. It has to some degree revolutionized how I sort and manage my interests to allow me to find connections between them, establish overarching concepts, and visualize how any data I choose to store is interrelated.
 
-The phrase “data I choose to store” is where Obsidian begins to mesh into the rest of this system. With Obsidian and Syncthing I could meet someone and let them browse my Obsidian vault, maybe they find a file or whole folder they like the contents of and want to include it in their personal Obsidian vault as well. We both fire up Syncthing, share info, select the folders we want to swap and move on. From there 2 possible options exist. We remove each other’s devices from Syncthing, keeping our personal lists clean, and our shared files diverge, allowing new unique evolutions of that data to form. The other option would be we keep our files synced in order to receive updates from each other’s respective vaults and continue to see changes over time. We could then pass folders we copied from someone else to other users, effectively creating a decentralized internet of data each individual curates for themselves. Each user can choose exactly the data they carry with them and therefore are capable of passing on to others.
+The phrase “data I choose to store” is where Obsidian begins to mesh into the rest of this system. With Obsidian and Syncthing I can easily keep all my notes synced between different platforms. On top of just keeping my notes synced, I could meet someone and let them browse my Obsidian vault, maybe they find a file or whole folder they like the contents of and want to include it in their personal Obsidian vault as well. We both fire up Syncthing, share info, select the folders we want to swap and move on. From there 2 possible options exist. We remove each other’s devices from Syncthing, keeping our personal lists clean, and our previously shared files diverge, allowing new unique evolutions of that data to form. The other option would be we keep our files synced in order to receive updates from each other’s respective vaults and continue to see changes over time. We could then pass folders we copied from someone else to other users, effectively creating a decentralized internet of data each individual curates for themselves. Each user can choose exactly the data they carry with them and therefore are capable of passing on to others.
+
+This ties back to the scalable goal. Since Syncthing works over LAN connections, this could all be done without the overall infrastructure of The Internet. Reusing the example of a router powered off my car, I could have a SBC connected to that router, and a hard drive connected to that SBC with a massive Obsidian vault stored on it. Then anyone could join the WiFi network the router broadcasts, browser the vault and select portions of it they want to save to their personal devices. From there that data can be carried to other local networks and shared, synced, and updated. This completely removes the need for higher level networking hardware, wires your ISP maintains and such, while still providing a high degree of information sharing.
+
+A system like this could even be used to bring internet like information sharing to extremely rural parts of the world through various means. Sure you could have individual people acting as curriers of data, but you could easily equip drones, or even solar powered gliders, with wireless connection equipment and have then pass through local networks distributing and acquiring updates as they go. The core goal here is to put the individual user at the center of their data. You would only download what your devices are setup to download. Any sort of advertising or automatic updates could only be opt-in.
 
 
 #### Install
 Obsidian is another easy one. Visit the website, download the installer and go. It is on every App Store and works right out of the box. I do encourage users to browse the community plugins for some additional functionality tailored to your needs. Obsidian does offer a paid service to keep your vault synced across devices, but we now have Syncthing on our side. So by selecting your Obsidian vault as a synced folder you can easily share our vault to your other devices.
+
+##### Recommended Apps
+- iOS (App Store links)
+	- [Obsidian](https://apps.apple.com/us/app/obsidian-connected-notes/id1557175442) (Free with paid plans for syncing)
+- Android (Play Store links)
+	- [Obsidian](https://play.google.com/store/apps/details?id=md.obsidian&hl=en_US&gl=US) (Free with additional paid plans)
+		- [APKFab mirror](https://apkfab.com/obsidian/md.obsidian) (To avoid using Google services)
+		- [GitHub](https://github.com/tailscale/tailscale)
+- Desktop (all platforms)
+	- [Obsidian](https://obsidian.md/) (Free with paid plans for syncing)
+
+##### Alternatives
+Most software similar to Obsidian sells itself with being cloud based to keep all your notes synced. Obsidian does offer that, but not out of the box, which leaves room for syncing your vaults how you want. This means that apps like [Notion](https://www.notion.so/), [OneNote](https://www.onenote.com/?public=1), and [Evernote](https://evernote.com/) are built on models that store your notes on their hardware. With Obsidian that is opt-in and alternatives are very openly discussed through the likes of GitHub and GitLabs. Using Syncthing is by no means new, but it was something I quickly jumped to as a great way to keep my vaults synced.
 
 ***
 ***
