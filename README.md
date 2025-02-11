@@ -18,9 +18,9 @@ A framework for a personal digital footprint that gives full control to the owne
 	- [Scalable](#scalable)
 	- [As Free As Possible](#as-free-as-possible])
 - [Software](#software)
-	- [Telegram](#telegram)
-		- [Overview](#overview-1)
-		- [Install](#install)
+	- ~~[Telegram](#telegram)~~
+		- ~~[Overview](#overview-1)~~
+		- ~~[Install](#install)~~
 	- [KeePassXC](#keepassxc)
 		- [Overview](#overview-2)
 		- [Install](#install-1)
@@ -112,37 +112,38 @@ A big reason I was motivated to figure all this out was to avoid subscriptions. 
 ## Software
 This is where I get into detail on each of the pieces of software I use and consider part of this digital footprint framework. I would say there’s a few more that are part of my particular setup, but the ones explored below comprise the core and cover most functionality that I got from paid services.
 
-### Telegram
-#### Overview
-Telegram is a security focused messaging service. There are multiple different types of chats that offer different levels of security. All normal messages are encrypted in transit between your device and the Telegram servers, but once there could theoretically be compromised. Secret chats, which need to be selected separately, are end-to-end encrypted. That means messages and other data you send in secret chats are never broadcasted in a readable form to anyone that might intercept that data in transit. Other services do this by default, which is a potential reason to avoid Telegram.
+### ~~Telegram~~
+#### ~~Overview~~
+~~Telegram is a security focused messaging service. There are multiple different types of chats that offer different levels of security. All normal messages are encrypted in transit between your device and the Telegram servers, but once there could theoretically be compromised. Secret chats, which need to be selected separately, are end-to-end encrypted. That means messages and other data you send in secret chats are never broadcasted in a readable form to anyone that might intercept that data in transit. Other services do this by default, which is a potential reason to avoid Telegram.~~
 
-The supposed reason for this is to allow your messages to be backed up and accessible from Telegram’s own secure cloud, meaning large file transfers are easier, message history is accessible on all your devices and other features that true end-to-end encryption would supposedly prevent. However the protocols to keep data encrypted while offering this do exists, and it seems more of a matter of implementing them in Telegram’s case.
+~~The supposed reason for this is to allow your messages to be backed up and accessible from Telegram’s own secure cloud, meaning large file transfers are easier, message history is accessible on all your devices and other features that true end-to-end encryption would supposedly prevent. However the protocols to keep data encrypted while offering this do exists, and it seems more of a matter of implementing them in Telegram’s case.~~
 
-Telegram and other similar services are favorites of protest organizers, cyber-sec enthusiasts, and generally anyone looking to communicate without big brother seeing. This does mean you need to tread a little lightly while using the app as it has understandably become a haven for hackers, scammers, and other nefarious individuals, but simply keeping your profile private and only adding users you have direct knowledge of has kept my experience very pleasant for years.
+~~Telegram and other similar services are favorites of protest organizers, cyber-sec enthusiasts, and generally anyone looking to communicate without big brother seeing. This does mean you need to tread a little lightly while using the app as it has understandably become a haven for hackers, scammers, and other nefarious individuals, but simply keeping your profile private and only adding users you have direct knowledge of has kept my experience very pleasant for years.~~
 
-I personally picked Telegram because at the time of me adopting a security focused messager it offered the best feature set. Telegram also boasts some potentially very attractive features including “unlimited” cloud storage. I know what you’re saying. “Aren’t we trying to avoid clouds?” My answer is yes, but the protections Telegram provides means I do use it for less sensitive storage and file transfers. For example: Let’s say I have a document I need to print and I am not at my computer. I can send that document to my Telegram saved messages, their interface for your cloud storage, and then go to a public library, sign into the web interface for the app, print my file, then sign out. Similarly Telegram is at the core of my note taking and link saving system. I have what is called a channel with myself as the only user and whenever I come across a link I want to save, I send it to this channel and can access it later on any device.
+~~I personally picked Telegram because at the time of me adopting a security focused messager it offered the best feature set. Telegram also boasts some potentially very attractive features including “unlimited” cloud storage. I know what you’re saying. “Aren’t we trying to avoid clouds?” My answer is yes, but the protections Telegram provides means I do use it for less sensitive storage and file transfers. For example: Let’s say I have a document I need to print and I am not at my computer. I can send that document to my Telegram saved messages, their interface for your cloud storage, and then go to a public library, sign into the web interface for the app, print my file, then sign out. Similarly Telegram is at the core of my note taking and link saving system. I have what is called a channel with myself as the only user and whenever I come across a link I want to save, I send it to this channel and can access it later on any device.~~
 
-There’s a slew of other features, but those few alone have placed the app at the core of a lot of my day to day technology usage. Later we will discuss setting up a private cloud of whatever size your hardware allows, but if you want to simply stop here I think this app offers a lot of secure, cross platform functionality as is. The next evolution of this would be a peer to peer messaging app, but due to the nature of a system like that many of the other features would probably suffer. Basically for now Telegram is good enough, but I do have some small reservations with what data I entrust to the platform.
+~~There’s a slew of other features, but those few alone have placed the app at the core of a lot of my day to day technology usage. Later we will discuss setting up a private cloud of whatever size your hardware allows, but if you want to simply stop here I think this app offers a lot of secure, cross platform functionality as is. The next evolution of this would be a peer to peer messaging app, but due to the nature of a system like that many of the other features would probably suffer. Basically for now Telegram is good enough, but I do have some small reservations with what data I entrust to the platform.~~
 
-#### Install
-Very easy, simply visit the [website](https://telegram.org/), click on your platform of choice and either be directed to the corresponding App Store, or get a download of the installer. Alternatively visit the [web interface](https://web.telegram.org/z/) to setup the app from say a public computer. The app needs only a phone number to setup and then you are good to go.
+#### ~~Install~~
+~~Very easy, simply visit the [website](https://telegram.org/), click on your platform of choice and either be directed to the corresponding App Store, or get a download of the installer. Alternatively visit the [web interface](https://web.telegram.org/z/) to setup the app from say a public computer. The app needs only a phone number to setup and then you are good to go.~~
 
-##### Recommended Apps
-https://telegram.org/
-- iOS (App Store links)
-	- [Telegram](https://apps.apple.com/us/app/telegram-messenger/id686449807) (Free)
-		- [GitHub](https://github.com/TelegramMessenger/Telegram-iOS)
-- Android (Play Store links)
-	- [Telegram](https://play.google.com/store/apps/details?id=org.telegram.messenger&hl=en_US&gl=US) (Free)
-		- [F-Droid mirror](https://f-droid.org/en/packages/org.telegram.messenger/) (To avoid using Google services)
-		- [GitHub](https://github.com/DrKLO/Telegram)
-- Desktop (all platforms)
-	- [Telegram](https://telegram.org/apps) (Free)
-	- [GitHub](https://github.com/telegramdesktop/tdesktop)
+##### ~~Recommended Apps~~
+~~https://telegram.org/~~
+- ~~iOS (App Store links)~~
+	- ~~[Telegram](https://apps.apple.com/us/app/telegram-messenger/id686449807) (Free)~~
+		- ~~[GitHub](https://github.com/TelegramMessenger/Telegram-iOS)~~
+- ~~Android (Play Store links)~~
+	- ~~[Telegram](https://play.google.com/store/apps/details?id=org.telegram.messenger&hl=en_US&gl=US) (Free)~~
+		- ~~[F-Droid mirror](https://f-droid.org/en/packages/org.telegram.messenger/) (To avoid using Google services)~~
+		- ~~[GitHub](https://github.com/DrKLO/Telegram)~~
+- ~~Desktop (all platforms)~~
+	- ~~[Telegram](https://telegram.org/apps) (Free)~~
+	- ~~[GitHub](https://github.com/telegramdesktop/tdesktop)~~
 
 ##### Alternatives
-- [Signal](https://signal.org/en/)
+- [Signal](https://signal.org/en/) (New popular/mainstream)
 - [WhatsApp](https://www.whatsapp.com/) (Owned by Meta/Facebook)
+- [Matrix](https://matrix.org/) (New personal preference)
 
 
 ***
